@@ -20,7 +20,7 @@ _From <a href="https://discord.gg/ThmPjSfc" target="_blank">Le Repaire du Web (C
 
 -   The basic features are available : `Play` / `Pause`, `Go to the next song` / `Go to the previous song`, `Go automatically to the next song when the current one ends`
 
--  I tried to be as much faithful as I can to the original. I also had fun with gradient animations.
+-  I tried to be as much faithful as I can to the original.
 
 -  I manually put 6 old songs in a `data.js`, in memory of the good old days
 
