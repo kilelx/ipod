@@ -84,6 +84,13 @@ h1 {
                 top: 2px
             }
 
+            .battery--icon {
+                position: absolute;
+                top: 3px;
+                right: -1px;
+                transform: scale(.8);
+            }
+
             svg {
                 fill: $screen-text;
                 position: absolute;

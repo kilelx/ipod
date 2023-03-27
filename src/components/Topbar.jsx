@@ -3,7 +3,8 @@ const Topbar = () => {
         <div className="topbar">
             <i className="fa-sharp fa-solid fa-play"></i>
             <p>Now Playing</p>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 10.59"
+            <img src="./assets/battery.png" alt="Battery icon" className="battery--icon" />
+            {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 10.59"
                 transform="translate(29 -9) scale(.25 .25)"
             >
                 <g
@@ -13,7 +14,7 @@ const Topbar = () => {
                   <rect x="7.01" y="1.37" width="4.69" height="7.95"/>
                   <rect x="12.78" y="1.37" width="4.69" height="7.95"/>
                 </g>
-            </svg>
+            </svg> */}
         </div>
     )
 }
