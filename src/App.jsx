@@ -1,3 +1,10 @@
+/*
+
+  - fixer problème texte + batterie sur mobile
+  - fixer input range sur microsoft edge
+
+*/
+
 import { useRef, useState } from "react";
 import Controls from "./components/Controls";
 import Topbar from "./components/Topbar";

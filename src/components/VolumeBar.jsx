@@ -8,15 +8,17 @@ const VolumeBar = ({ audioRef, volume, volumeRef, isSettingVolume }) => {
   };
 
   return (
-    <div className={styles.display + " progress volume"}>
+    <div
+      className={styles.display + " progress volume--bar"}
+      ref={volumeRef}
+    >
       <input
-        className="volume--bar"
+        // className="volume--bar"
         type="range"
         min={0}
         max={100}
         value={volume}
         onChange={handleProgressChange}
-        ref={volumeRef}
       />
       <span className="volume">{volume}</span>
     </div>

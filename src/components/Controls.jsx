@@ -151,7 +151,9 @@ const Controls = ({
           className="btn--center"
           ref={centralButtonRef}
           onMouseDown={(e) => handleMouseDownCenter(e)}
+          onTouchStart={(e) => handleMouseDownCenter(e)}
           onMouseUp={(e) => handleMouseUpCenter(e)}
+          onTouchEnd={(e) => handleMouseUpCenter(e)}
           onMouseOver={(e) => handleMouseOverCenter(e)}
           title="Useless button"
         ></div>

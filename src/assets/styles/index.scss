@@ -10,6 +10,10 @@
 $screen-text: #383829;
 $btn-section: #727272;
 $menu-text: #9e9e9e;
+:root {
+    --range-progress: 0%;
+    --volume-progress: 50%;
+}
 
 *,
 ::before,
@@ -38,6 +42,7 @@ body {
 h1 {
     color: $screen-text;
     transform: translateY(-100%);
+    text-align: center;
     @media (max-width: 500px) {
         font-size: calc(6000vw/1000);
         transform: translateY(-200%);
@@ -110,6 +115,7 @@ h1 {
             justify-content: center;
             position: relative;
             margin-top: 8px;
+
             &.d-none {
                 display: none;
             }
@@ -117,6 +123,8 @@ h1 {
             &.d-flex {
                 display: flex;
             }
+
+            // Text infos
             .time,
             .volume {
                 font-size: 11px;
@@ -133,57 +141,70 @@ h1 {
                 left: 50%;
                 transform: translateX(-11%);
             }
-            input[type=range] {
-                width: 95%;
-                height: 8px;
-                border: 1px solid $screen-text;
-                border-radius: 5px;
-                -webkit-appearance: none;
-                appearance: none;
-                background: transparent;
-                pointer-events: none;
-                position: relative;
-                overflow: hidden;
 
-                &.progress--bar {
+            // Both progress--bar
+            &.progress--bar,
+            &.volume--bar {
+                input[type=range] {
+                    width: 95%;
+                    height: 8px;
+                    border: 1px solid $screen-text;
+                    border-radius: 5px;
+                    -webkit-appearance: none;
+                    appearance: none;
+                    background: transparent;
+                    pointer-events: none;
+                    position: relative;
+                    overflow: hidden;
+
+                    // Cursor
+                    &::-webkit-slider-thumb {
+                        -webkit-appearance: none;
+                    }
+                    &::-webkit-slider-thumb,
+                    &::-ms-thumb {
+                        width: 0;
+                        height: 0;
+                    }
+                    &::-moz-range-thumb {
+                        width: 0;
+                        height: 0;
+                        border: none;
+                    }
+            }
+
+            // Progress, I couldn't put the ::before on the input because of Firefox
+            &::before {
+                content: '';
+                background: $screen-text;
+                height: 6px;
+                border-radius: 5px 0 0 5px;
+                width: var(--range-progress);
+                position: absolute;
+                left: 5px;
+                bottom: 1px;
+            }
+
+            &.progress--bar {
+                input[type=range] {
                     --range-progress: 0;
-                    // Progress
-                    &::before {
-                        width: var(--range-progress);
-                    }
                 }
-
-                &.volume--bar {
-                    --volume-progress: 50%;
-                    // Volume
-                    &::before {
-                        width: var(--volume-progress);
-                        bottom: 0;
-                    }
-                }
-
                 // Progress
                 &::before {
-                    content: '';
-                    background: $screen-text;
-                    height: 7px;
-                    border-radius: 5px 0 0 5px;
                     width: var(--range-progress);
-                    position: absolute;
                 }
-
-                // Cursor
-                &::-webkit-slider-thumb {
-                    -webkit-appearance: none;
+            }
+            &.volume--bar {
+                input[type=range] {
+                    --volume-progress: 50%;
                 }
-                &::-webkit-slider-thumb,
-                &::-moz-range-thumb,
-                &::-ms-thumb {
-                    width: 0;
-                    height: 0;
+                // Volume
+                &::before {
+                    width: var(--volume-progress);
                 }
             }
         }
+    }
     }
 
     /* === Navigation === */
