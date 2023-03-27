@@ -24,6 +24,11 @@ _From <a href="https://discord.gg/ThmPjSfc" target="_blank">Le Repaire du Web (C
 
 -  I manually put 6 old songs in a `data.js`, in memory of the good old days (sorry for the copyright)
 
+### Technologies
+-   HTML
+-   SCSS
+-   React (using <a href="https://vitejs.dev/" target="_blank"></a>)
+
 ## Things I'd like to improve
 
 -   I couldn't find out how I could handle with the sound when scrolling on mobile
