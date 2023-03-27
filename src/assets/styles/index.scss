@@ -45,7 +45,7 @@ h1 {
     text-align: center;
     @media (max-width: 500px) {
         font-size: calc(6000vw/1000);
-        transform: translateY(-200%);
+        transform: translateY(-150%);
     }
 }
 
@@ -87,9 +87,9 @@ h1 {
             svg {
                 fill: $screen-text;
                 position: absolute;
-                transform: scale(.08);
-                top: -55px;
-                right: -137px;
+                transform: scale(.25) translate(115px, -100px);
+                // top: -55px;
+                // right: -137px;
             }
         }
 
