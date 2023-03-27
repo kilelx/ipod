@@ -22,12 +22,12 @@ _From <a href="https://discord.gg/ThmPjSfc" target="_blank">Le Repaire du Web (C
 
 -  I tried to be as much faithful as I can to the original. I also had fun with gradient animations.
 
--  I manually put 6 old songs in a `data.js`, in memory of the good old days (sorry for the copyright)
+-  I manually put 6 old songs in a `data.js`, in memory of the good old days
 
 ### Technologies
 -   HTML
 -   SCSS
--   React (using <a href="https://vitejs.dev/" target="_blank"></a>)
+-   React (using <a href="https://vitejs.dev/" target="_blank">Vite.js</a>)
 
 ## Things I'd like to improve
 
