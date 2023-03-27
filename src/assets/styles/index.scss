@@ -87,9 +87,8 @@ h1 {
             svg {
                 fill: $screen-text;
                 position: absolute;
-                transform: scale(.25) translate(115px, -100px);
-                // top: -55px;
-                // right: -137px;
+                top: 0;
+                // transform: scale(.25) translate(115px, -98px);
             }
         }
 
