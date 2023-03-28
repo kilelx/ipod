@@ -150,7 +150,6 @@ h1 {
                     // Progress
                     &::before {
                         width: var(--range-progress);
-                        bottom: 0;
                     }
                 }
 
@@ -159,7 +158,6 @@ h1 {
                     // Volume
                     &::before {
                         width: var(--volume-progress);
-                        bottom: 0;
                     }
                 }
 
@@ -171,6 +169,7 @@ h1 {
                     border-radius: 5px 0 0 5px;
                     width: var(--range-progress);
                     position: absolute;
+                    bottom: 0;
                 }
 
                 // Cursor
