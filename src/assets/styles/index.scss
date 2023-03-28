@@ -192,6 +192,11 @@ h1 {
                 // Progress
                 &::before {
                     width: var(--range-progress);
+<<<<<<< HEAD
+=======
+                    position: absolute;
+                    bottom: 0;
+>>>>>>> 7f5e540 (fix: progress bar height)
                 }
             }
             &.volume--bar {
