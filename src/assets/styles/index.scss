@@ -38,9 +38,10 @@ body {
 h1 {
     color: $screen-text;
     transform: translateY(-100%);
+    text-align: center;
     @media (max-width: 500px) {
         font-size: calc(6000vw/1000);
-        transform: translateY(-200%);
+        transform: translateY(-150%);
     }
 }
 
@@ -65,6 +66,9 @@ h1 {
         background: linear-gradient(225deg, #a2a29b, #b8b8ad);
         box-shadow: inset 0px 0px 3px 3px rgb(114, 114, 114);
         padding: .5rem;
+        @media (max-width: 500px) {
+            height: 138px;
+        }
 
         .topbar {
             border-bottom: 2px solid $screen-text;
@@ -115,7 +119,6 @@ h1 {
 
             &.d-flex {
                 display: flex;
-                margin-bottom: .25rem;
             }
             .time,
             .volume {
