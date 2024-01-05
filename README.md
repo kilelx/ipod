@@ -31,4 +31,4 @@ _From <a href="https://discord.gg/ThmPjSfc" target="_blank">Le Repaire du Web (C
 
 ## Things I'd like to improve
 
--   I couldn't find out how I could handle with the sound when scrolling on mobile
+-   I couldn't find out how to handle with the sound when scrolling on mobile
